@@ -25,8 +25,10 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-    $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').toggleClass('active');
+    $('#sidebar-collapse').on('click', function () {
+        $(this).toggleClass('show-burger');
+        $('#sidebar').toggleClass('sidebar-show');
+
     });
 });
 
