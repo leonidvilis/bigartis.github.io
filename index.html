@@ -17,11 +17,17 @@
 <body>
 
     <div class="wrapper">
+        <!-- Кнопка меню -->
         <!--+++ Фиксированное боковое меню +++-->
         <aside id="sidebar" class="sidebar">
-            <!-- Кнопка меню -->
-            <div id="sidebar-collapse">
-                <img src="img/arrow.png" alt="lient logo">
+            
+            <div id="sidebar-show">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
             <!-- For inner shadow on sidebar -->
             <div class="inner-shadow">
@@ -40,50 +46,50 @@
                     <ul>
                         <li>
                             <i class="sprite sprite-galery"></i>
-                            <a href="" class="menu-link">
-                                <span>Галерея</span>
+                            <a href="" class="half-btn">
+                                <span><span>Галерея</span></span>
                             </a>
                         </li>
                         <li>
                             <i class="sprite sprite-identity"></i>
-                            <a href="" class="menu-link">
-                                <span>Айдентика</span>
+                            <a href="" class="half-btn">
+                                <span><span>Айдентика</span></span>
                             </a>
                         </li>
                         <li>
                             <i class="sprite sprite-polygraph"></i>
-                            <a href="" class="menu-link">
-                                <span>Полиграфия</span>
+                            <a href="" class="half-btn">
+                                <span><span>Полиграфия</span></span>
                             </a>
                         </li>
                         <li>
                             <i class="sprite sprite-photomontage"></i>
-                            <a href="" class="menu-link">
-                                <span>Фотомонтаж</span>
+                            <a href="" class="half-btn">
+                                <span><span>Фотомонтаж</span></span>
                             </a>
                         </li>
                         <li>
                             <i class="sprite sprite-web"></i>
-                            <a href="" class="menu-link">
-                                <span>WEB-Дизайн</span>
+                            <a href="" class="half-btn">
+                                <span><span>WEB-Дизайн</span></span>
                             </a>
                         </li>
                         <li>
                             <i class="sprite sprite-smm"></i>
-                            <a href="" class="menu-link">
-                                <span>SMM-Дизайн</span>
+                            <a href="" class="half-btn">
+                                <span><span>SMM-Дизайн</span></span>
                             </a>
                         </li>
                         <li>
                             <i class="sprite sprite-about"></i>
-                            <a href="" class="menu-link">
-                                <span>О нас</span>
+                            <a href="" class="half-btn">
+                                <span><span>О нас</span></span>
                             </a>
                         </li>
                         <li>
                             <i class="sprite sprite-order"></i>
-                            <a href="" class="menu-link">
-                                <span>Заказать</span>
+                            <a href="" class="half-btn">
+                                <span><span>Заказать</span></span>
                             </a>
                         </li>
                     </ul>
@@ -150,14 +156,18 @@
                         <h4>Чувства, с которыми они влюбляются
                             <br>в ваш продукт, услуги, проекты, бренд! </h4>
                     </div>
+                    
                     <div class="banner-words col-md-6">
-                        <span class="banner-word banner-smm">SMM-Design</span>
+                        <span class="banner-word banner-smm gradient-text">SMM-Design</span>
                         <span class="banner-word banner-identity">Айдентика</span>
                         <span class="banner-word banner-logo">Logo</span>
                         <span class="banner-word banner-photomontage">Фотомонтаж</span>
-                        <span class="banner-word banner-web">Web-design</span>
+                        <span class="banner-word banner-web gradient-text">Web-design</span>
                         <span class="banner-word banner-polygraph">Полиграфия</span>
                         <span class="banner-word banner-style">Фирменный стиль</span>
+                        <div class="element">
+                            <img src="img/arrow.png" alt="img">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -173,23 +183,23 @@
                     </div>
 
                     <div class="filters">
-                        <a class="filter-a active" data-filter="all">
-                            <span>Все</span>
+                        <a class="half-btn active" data-filter="all">
+                            <span><span>Все</span></span>
                         </a>
-                        <a class="filter-a" data-filter="identity">
-                            <span>Айдентика</span>
+                        <a class="half-btn" data-filter="identity">
+                            <span><span>Айдентика</span></span>
                         </a>
-                        <a class="filter-a" data-filter="polygraph">
-                            <span>Полиграфия</span>
+                        <a class="half-btn" data-filter="polygraph">
+                            <span><span>Полиграфия</span></span>
                         </a>
-                        <a class="filter-a" data-filter="photomontage">
-                            <span>Фотомонтаж</span>
+                        <a class="half-btn" data-filter="photomontage">
+                            <span><span>Фотомонтаж</span></span>
                         </a>
-                        <a class="filter-a" data-filter="web">
-                            <span>WEB-Дизайн</span>
+                        <a class="half-btn" data-filter="web">
+                            <span><span>WEB-Дизайн</span></span>
                         </a>
-                        <a class="filter-a" data-filter="smm">
-                            <span>SMM-Дизайн</span>
+                        <a class="half-btn" data-filter="smm">
+                            <span><span>SMM-Дизайн</span></span>
                         </a>
                     </div>
                     <br/>
@@ -424,8 +434,9 @@
                             <label class="desc" for="">* Поля, обозначенные звездочкой, обязательны для заполнения.</label>
                             <label class="custom-checkbox-container" for="agreement">
                                 <input class="custom-checkbox" type="checkbox" name="agreement" id="agreement">
-                                <span class="custom-checkbox-checkmark"></span> Соглашаюсь на обработку персональных данных в рамках соглашения о конфеденциальности
-                                и обработке персональных данных.
+                                <span class="custom-checkbox-checkmark"></span>
+                                <span class="custom-checkbox-desc"> Соглашаюсь на обработку персональных данных в рамках соглашения о конфеденциальности
+                                и обработке персональных данных. </span>
                             </label>
                         </form>
                     </div>
@@ -586,10 +597,10 @@
                 <h2>Отзывы и благодарности</h2>
                 <div class="f-buttons">
                     <a id="b-feedback" class="f-button active" data-filter="all">
-                        <span>Отзывы</span>
+                        <span><span>Отзывы</span></span>
                     </a>
                     <a id="b-thank" class="f-button" data-filter="identity">
-                        <span>Благодарности</span>
+                        <span><span>Благодарности</span></span>
                     </a>
                 </div>
 
@@ -601,7 +612,7 @@
                             <h3>Разработка логотипа</h3>
                             <p>Отзыв о компании, мы молодцы, самые классные, со всем справились, лого супер, ура товарищам!))</p>
                             <a href="">Развернуть</a>
-                            <p class="name">Название компании <br> или имя автора отзыва Город: Санкт-Петербург</p>
+                            <p class="name">Название компании <br> или имя автора отзыва <br> Город: Санкт-Петербург</p>
                         </div>
                     </div>                    
                     <div class="col-md-4 f-card">
@@ -610,7 +621,7 @@
                             <h3>Разработка логотипа</h3>
                             <p>Отзыв о компании, мы молодцы, самые классные, со всем справились, лого супер, ура товарищам!))</p>
                             <a href="">Развернуть</a>
-                            <p class="name">Название компании <br> или имя автора отзыва Город: Санкт-Петербург</p>
+                            <p class="name">Название компании <br> или имя автора отзыва <br> Город: Санкт-Петербург</p>
                         </div>
                     </div>                    
                     <div class="col-md-4 f-card">
@@ -619,7 +630,7 @@
                             <h3>Разработка логотипа</h3>
                             <p>Отзыв о компании, мы молодцы, самые классные, со всем справились, лого супер, ура товарищам!))</p>
                             <a href="">Развернуть</a>
-                            <p class="name">Название компании <br> или имя автора отзыва Город: Санкт-Петербург</p>
+                            <p class="name">Название компании <br> или имя автора отзыва <br> Город: Санкт-Петербург</p>
                         </div>
                     </div>                    
                     <div class="col-md-4 f-card">
@@ -628,7 +639,7 @@
                             <h3>Разработка логотипа</h3>
                             <p>Отзыв о компании, мы молодцы, самые классные, со всем справились, лого супер, ура товарищам!))</p>
                             <a href="">Развернуть</a>
-                            <p class="name">Название компании <br> или имя автора отзыва Город: Санкт-Петербург</p>
+                            <p class="name">Название компании <br> или имя автора отзыва <br> Город: Санкт-Петербург</p>
                         </div>
                     </div>                    
                     <div class="col-md-4 f-card">
@@ -637,7 +648,7 @@
                             <h3>Разработка логотипа</h3>
                             <p>Отзыв о компании, мы молодцы, самые классные, со всем справились, лого супер, ура товарищам!))</p>
                             <a href="">Развернуть</a>
-                            <p class="name">Название компании <br> или имя автора отзыва Город: Санкт-Петербург</p>
+                            <p class="name">Название компании <br> или имя автора отзыва <br> Город: Санкт-Петербург</p>
                         </div>
                     </div>                    
                     <div class="col-md-4 f-card">
@@ -646,7 +657,7 @@
                             <h3>Разработка логотипа</h3>
                             <p>Отзыв о компании, мы молодцы, самые классные, со всем справились, лого супер, ура товарищам!))</p>
                             <a href="">Развернуть</a>
-                            <p class="name">Название компании <br> или имя автора отзыва Город: Санкт-Петербург</p>
+                            <p class="name">Название компании <br> или имя автора отзыва <br> Город: Санкт-Петербург</p>
                         </div>
                     </div>                    
                 </div>
@@ -667,13 +678,15 @@
             <footer class="footer">
                 <div class="row">
                     <p>Дизайн сайта разработан:</p>
-                    <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="92" height="38"
+                    <!-- <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="92" height="38"
                         viewbox="0 0 92 38">
                         <image id="bigartis-logo.svg" width="92" height="38" xlink:href="data:img/png;base64,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"
                         />
-                    </svg>
+
+                    </svg> -->
+                    <img class="img" src="/img/bigartis-logo.png"/>
                 </div>
-                <p> Россия. г. Санкт-Петербург. Все права защищены © 2010-2018. Арт-студия BIGARTIS Пользуясь услугами сайта,
+                <p class="footer-desc"> Россия. г. Санкт-Петербург. Все права защищены © 2010-2018.  Арт-студия BIGARTIS<br>Пользуясь услугами сайта,
                     вы соглашаетесь на обработку персональных данных, в рамках
                     <a href="">соглашения о конфеденциальности и обработке персональных данных.</a>
                 </p>

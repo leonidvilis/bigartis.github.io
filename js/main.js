@@ -1,6 +1,7 @@
+// Filter
 $(document).ready(function () {
 
-    $(".filter-a").click(function () {
+    $(".filters .half-btn").click(function () {
         var value = $(this).attr('data-filter');
 
         if (value == "all") {
@@ -13,7 +14,7 @@ $(document).ready(function () {
             $('.filter').filter('.' + value).show('3000');
         }
     });
-    if ($(".filter-a").removeClass("active")) {
+    if ($(".filter .half-btn").removeClass("active")) {
         $(this).removeClass("active");
     }
     $(this).addClass("active");
@@ -24,29 +25,7 @@ $(document).ready(function () {
 });
 
 
-$(document).ready(function () {
-    $('#sidebar-collapse').on('click', function () {
-        $(this).toggleClass('show-burger');
-        $('#sidebar').toggleClass('sidebar-show');
-
-    });
-});
-
-
-// Basic initialization is like this:
-// $('.your-class').slick();
-
-// I added some other properties to customize my slider
-// Play around with the numbers and stuff to see
-// how it works.
-// $('.slick-carousel').slick({
-//     infinite: true,
-//     slidesToShow: 6, // Shows a three slides at a time
-//     slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
-//     arrows: true, // Adds arrows to sides of slider
-//     dots: true // Adds the dots on the bottom
-// });
-
+//Slick slider
 $('.slick-carousel').slick({
     // dots: true,
     infinite: true,
@@ -80,7 +59,7 @@ $('.slick-carousel').slick({
             slidesToScroll: 2,
             dots: true,
             infinite: true,
-            
+
         }
     }, {
         breakpoint: 480,
@@ -93,4 +72,25 @@ $('.slick-carousel').slick({
             autoplaySpeed: 2000,
         }
     }]
+});
+
+
+// скрываем меню
+$('#sidebar-show').click(function (e) {
+    e.preventDefault();
+    $(this).closest('#sidebar').toggleClass('sidebar-show');
+    $(this).toggleClass('open');
+});
+$(".half-btn").click(function (e) {
+    $(this).closest("#sidebar").removeClass("slider-show");
+});
+$(document).mouseup(function (e) {
+    var container = $('#sidebar');
+    if (container.find('.half-btn').has(e.target).length === 0 &&
+        $(e.target).closest('#sidebar').length === 0) {
+        if(container.hasClass("sidebar-show")){
+            container.removeClass('sidebar-show');
+            $('#sidebar-show').toggleClass('open');
+        }
+    }
 });
